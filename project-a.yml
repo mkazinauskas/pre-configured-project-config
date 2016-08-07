@@ -1,2 +1,9 @@
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
 sample:
   property: Sample Property
+
