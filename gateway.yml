@@ -1,0 +1,18 @@
+zuul:
+  routes:
+    api:
+      path: /api/**
+      url: http://project-a
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+ribbon:
+  eureka:
+    enabled: true
+
+server:
+  port: 8080
