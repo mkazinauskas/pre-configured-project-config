@@ -1,5 +1,10 @@
 server:
   port: 8761
-sample:
-  property: Sample Property
 
+eureka:
+  client:
+    useDnsForFetchingServiceUrls: false
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
