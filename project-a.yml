@@ -9,3 +9,13 @@ eureka:
 sample:
   property: Sample Property
 
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+spring:
+  h2:
+    console:
+      enabled: true
