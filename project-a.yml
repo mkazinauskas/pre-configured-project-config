@@ -1,5 +1,6 @@
 server:
   port: 8520
+
 eureka:
   client:
     enabled: true
