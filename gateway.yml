@@ -26,6 +26,13 @@ security:
     resource:
       userInfoUri: http://localhost:9999/uaa/user
 
+proxy:
+  auth:
+    routes:
+      api: oauth2
+      stores: passthru
+      recommendations: none
+
 eureka:
   client:
     enabled: true
