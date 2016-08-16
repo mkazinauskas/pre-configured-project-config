@@ -1,0 +1,20 @@
+server:
+  port: 8521
+
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+sample:
+  property: Sample Property
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  h2:
+    console:
+      enabled: true
