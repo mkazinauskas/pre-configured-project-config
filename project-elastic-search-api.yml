@@ -1,5 +1,5 @@
 server:
-  port: 8520
+  port: 8600
 
 eureka:
   client:
@@ -11,9 +11,8 @@ sample:
   property: Sample Property
 
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: none
-  h2:
-    console:
-      enabled: true
+  data:
+    elasticsearch:
+      properties:
+        path.home: build/elastic-cluster
+        transport.tcp.connect_timeout: 30s
